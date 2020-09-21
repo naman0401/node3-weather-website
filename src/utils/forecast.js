@@ -23,7 +23,7 @@ const forecast = (latitude, longitude, callback)=>{
             callback('problem with coordinates',undefined)
         }else{
             const curr = body.current
-            callback(undefined,"It is currently "+curr.temp+" degrees out. There is a "+curr.humidity+"% chance of raining")
+            callback(undefined,"It is currently "+curr.temp+" degrees out, and humidity is "+curr.humidity+"%.")
         }     
     })
 }
